@@ -12,8 +12,5 @@ class Llama:
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-
-
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow" )
-
-miss_fuzz.feed()
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
